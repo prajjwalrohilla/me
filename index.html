@@ -1,20 +1,47 @@
+<!Doctype html>
 <html>
 <head>
 
   <title>Prajjwak Rohilla</title>
 
-   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
 <script src='//cdn.jsdelivr.net/vivus/0.2.3/vivus.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <style type="text/css">
+
+#loader{
+
+
+position: absolute;
+background:#1E2521;
+left: 0px;
+top: 0px;
+  margin:0px auto;
+  height: 100%;
+  width: 100%;
+}
+
 
 #canvas{
 
 
 
-    position: relative;
+    position: absolute;
     left: 100px;
-    top:100px;
+    top: 100px;
+  
 }
 
 path {
@@ -22,20 +49,198 @@ path {
     transition: fill-opacity 1s;
   }
 
+
+
+
+.ne{
+
+position: absolute;
+left: 0px ;
+width: 60px;
+top: 0px ;
+background:rgba(26,7,70,0.8);
+
+height: 100%;
+margin:0px auto;
+z-index: 1;
+
+filter: drop-shadow(1px 0px 5px #6B3DD1);
+
+
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+
+
+
+@-webkit-keyframes animatebottom {
+  from {left:-100px; opacity:0 } 
+  to { left:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ left:-100px; opacity:0 } 
+  to{ left:0px; opacity:1 }
+}
+
+
+
+
+
+
+.flee{
+
+  position: relative;
+
+  left: 5px;
+  top:240px;
+  vertical-align: middle !important;
+
+
+}
+
+
+.icon1{
+
+
+color:white;
+opacity:0.5;
+transition:  opacity 2s,drop-shadow 2s;
+margin-bottom: 10px;
+
+}
+
+.icon1:hover{
+
+opacity: 1;
+content: "home";
+filter: drop-shadow(1px 1px 8px white);
+
+}
+
+.icon2{
+
+
+color:white;
+opacity:0.5;
+transition:  opacity 2s,drop-shadow 2s;
+margin-bottom: 10px;
+
+
+}
+
+.icon2:hover{
+
+opacity: 1;
+filter: drop-shadow(1px 1px 8px white);
+
+}
+
+.icon3{
+
+
+color:white;
+opacity:0.5;
+transition:  opacity 2s,drop-shadow 2s;
+margin-bottom: 10px;
+
+
+}
+
+.icon3:hover{
+
+opacity: 1;
+filter: drop-shadow(1px 1px 8px white);
+
+}
+
+
+
+
+.side{
+
+position: absolute;
+
+left: 75px;
+right: 0px;
+width: 1306px;
+top: 0px ;
+background-color:rgba(40,7,66,0.9);
+
+
+height: 100%;
+z-index:0;
+
+
+-webkit-animation-name: animateside;
+  -webkit-animation-duration: 1s;
+  animation-name: animateside;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animateside{
+  from {right:-600px; opacity:0 } 
+  to { right:0px; opacity:1 }
+}
+
+@keyframes animateside{ 
+ from {right:-600px; opacity:0 } 
+  to { right:0px; opacity:1 }
+}
+
+
+
+#home{
+  
+
+}
+.side1{
+position: relative;
+
+margin-left: 30px;
+top:30px;
+  color: white;
+}
+.fontt{
+
+
+  font-size: 70px;
+  font-family: cursive;
+  text-align: center;
+  text-shadow:6px 2px 6px black;
+  opacity: 0.7;
+  
+}
+
+
+.fill-1 g:first-of-type > path{
+  fill: #3CF861;
+fill-opacity: 1;
+}
+
+
+.clear-stroke path{
+  stroke: none;
+}
+
+
 </style>
 </head>
-<body>
+<body >
 
-
-<svg version="1.0" id="canvas"xmlns="http://www.w3.org/2000/svg" 
+<div id="loader" class="row"> 
+<svg version="1.0" id="canvas" xmlns="http://www.w3.org/2000/svg" 
 xmlns:xlink="http://www.w3.org/1999/xlink"
 
  width="875.000000pt" height="368.000000pt" viewBox="0 0 875.000000 368.000000"
- preserveAspectRatio="xMidYMid meet">
+ preserveAspectRatio="xMidYMid meet" class="col-md-16 col-xs-10">
 >
 <g transform="translate(0.000000,368.000000) scale(0.100000,-0.100000)"
- fill="#C78C1C"stroke="black" stroke-width="5">
-<path  d="M190 3268 c17 -24 133 -186 258 -360 l227 -317 1657 -1 1658 0 -258
+ fill="#3CF861"stroke="white" stroke-width="5">
+<path   style="fill:#3CF861;" d="M190 3268 c17 -24 133 -186 258 -360 l227 -317 1657 -1 1658 0 -258
 360 -257 359 -1658 1 -1659 0 32 -42z m3466 -318 l212 -295 -1572 -3 c-864 -1
 -1576 0 -1582 2 -7 3 -103 132 -214 288 -112 156 -207 289 -213 296 -8 10 306
 12 1574 10 l1584 -3 211 -295z"/>
@@ -83,13 +288,98 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 3 -574 7 0 4 61 103 136 220 l136 213 574 0 c316 0 574 -3 574 -7z"/>
 </g>
 </svg>
+</div>
+
+
+
+
+
+
+<div style="display:none;"id="myDiv" class="ne row">
+
+
+
+
+  <div class="flee col-xs-4 col-md-3 align-middle" >
+
+  <a href="#home" ><i class= "material-icons icon1 " style="font-size: 30px ;">home</i></a><br>
+  <a href="url"><i class="material-icons icon2"  style="font-size: 30px ;">person</i></a><br>
+  <a href="url"><i class="material-icons icon3"  style="font-size: 30px ;">build</i></a><br>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<div style="display:none;"id="myDiv2" class="side row" >
+
+
+  <div  id="home col-md-9 col-xs-10">
+  
+
+<!--<img id="new"src="me.jpg">-->
+
+<div class="side1">
+<p class="fontt">PRAJJWAL ROHILLA</p>
+
+</div>
+
+  </div>
+
+
+
+</div>
+
+
+
 
 
 <script type="text/javascript"  >
+window.onload=myf();
 
-  new Vivus('canvas', {start: 'autostart', type: 'async', duration: 300, animTimingFunction: Vivus.EASE}, function(car){
+function myf() {
+
+ /*
+
+new Vivus('canvas', {start: 'autostart', type: 'async', duration: 300, animTimingFunction: Vivus.EASE}, function(car){
     setTimeout(function(){ car.reset().play(); }, 3000);
+  });*/
+
+
+new Vivus('canvas', {start: 'autostart', type: 'delayed',duration: 410, pathTimingFunction: Vivus.EASE}, function(obj){
+obj.el.classList.add('fill-1', 'fill-2', 'fill-3', 'clear-stroke');
   });
+
+
+    myVar = setTimeout(showPage, 8000);
+}
+
+
+
+function showPage(){
+
+ 
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv2").style.display = "block";
+  document.getElementById("myDiv").style.display = "block";
+   
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
 </script>
 </body>
 </html>
