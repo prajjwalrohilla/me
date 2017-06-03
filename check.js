@@ -9,12 +9,12 @@ new Vivus('canvas', {start: 'autostart', type: 'async', duration: 300, animTimin
   });*/
 
 
-new Vivus('canvas', {start: 'autostart', type: 'async',duration: 410, pathTimingFunction: Vivus.EASE}, function(obj){
-obj.el.classList.add('fill-1', 'fill-2', 'fill-3', 'clear-stroke');
+new Vivus('canvas', {start: 'autostart', type: 'async',duration: 200, pathTimingFunction: Vivus.EASE}, function(obj){
+obj.el.classList.add('fill-1', 'clear-stroke');
   });
 
 
-    myVar = setTimeout(showPage, 10000);
+    myVar = setTimeout(showPage, 6000);
 }
 
 
