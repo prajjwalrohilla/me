@@ -1,7 +1,7 @@
-/*window.onload=myf();
+window.onload=myf();
 
 
-
+/*
 
 function myf() {
 
@@ -41,7 +41,7 @@ function showPage(){
 
 
  /* ---- particles.js config ---- */
-
+function myf(){
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -152,3 +152,8 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+
+
+
+};
