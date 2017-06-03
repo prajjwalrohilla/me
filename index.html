@@ -123,5 +123,14 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 
 <script type="text/javascript" src="check.js" >
 </script>
+<script type="text/javascript">
+
+new Vivus('canvas', {start: 'autostart', type: 'async',duration: 200, pathTimingFunction: Vivus.EASE}, function(obj){
+obj.el.classList.add('fill-1', 'clear-stroke');
+  });
+
+  myVar = setTimeout(showPage, 6000);
+
+</script>
 </body>
 </html>

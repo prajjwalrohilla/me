@@ -1,12 +1,11 @@
-window.onload=myf();
+/*window.onload=myf();
+
+
+
 
 function myf() {
 
- /*
-
-new Vivus('canvas', {start: 'autostart', type: 'async', duration: 300, animTimingFunction: Vivus.EASE}, function(car){
-    setTimeout(function(){ car.reset().play(); }, 3000);
-  });*/
+ 
 
 
 new Vivus('canvas', {start: 'autostart', type: 'async',duration: 200, pathTimingFunction: Vivus.EASE}, function(obj){
@@ -14,10 +13,21 @@ obj.el.classList.add('fill-1', 'clear-stroke');
   });
 
 
+
+
+
+
+
+new Vivus('canvas', {start: 'autostart', type: 'async', duration: 300, animTimingFunction: Vivus.EASE}, function(car){
+    setTimeout(function(){ car.reset().play(); }, 3000);
+  });
+
+
+
+
     myVar = setTimeout(showPage, 6000);
 }
-
-
+*/
 
 function showPage(){
 
@@ -142,4 +152,3 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
