@@ -187,3 +187,18 @@ top:100px;
   color: red;
   
 }
+
+.fontt{
+
+position: absolute;
+left: 100px;
+top:100px;
+  font-size: 70px;
+  font-family: cursive;
+  display: flex;
+  text-shadow:6px 2px 6px white;
+  opacity: 0.7;
+  color: red;
+
+  
+}
