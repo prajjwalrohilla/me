@@ -28,6 +28,31 @@ path {
 }
 
 
+.fontt{
+position: absolute;
+left: 200px;
+top:100px;
+  font-size: 70px;
+  font-family: cursive;
+  display: flex;
+  text-shadow:6px 2px 6px white;
+
+  opacity: 0.7;
+  color: #14EAE3;
+  
+}
+
+.im{
+position:absolute;
+left: 480px;
+top:210px; 
+height: 130px;
+border-radius: 50%;
+opacity: 0.8;
+  transition:  opacity 2s;
+
+
+}
 
 }
 
@@ -37,7 +62,8 @@ position: absolute;
 left: 0px ;
 width: 60px;
 top: 0px ;
-background:rgba(26,7,70,0.8);
+
+background-color: #212323;
 
 height: 100%;
 margin:0px auto;
@@ -170,35 +196,65 @@ fill-opacity: 0.9;
 
 
 
-#home{
-  
 
-}
-.fontt{
-
-position: absolute;
-left: 100px;
-top:100px;
-  font-size: 70px;
-  font-family: cursive;
-  
-  text-shadow:6px 2px 6px white;
-  opacity: 0.7;
-  color: red;
-  
-}
 
 .fontt{
-
 position: absolute;
-left: 100px;
+left: 320px;
 top:100px;
   font-size: 70px;
   font-family: cursive;
   display: flex;
   text-shadow:6px 2px 6px white;
-  opacity: 0.7;
-  color: red;
 
+  opacity: 0.7;
+  color: #14EAE3;
   
+}
+
+
+
+.active{
+
+opacity: 1;
+filter: drop-shadow(1px 1px 8px white);
+
+}
+
+.im{
+position:absolute;
+left: 600px;
+top:210px; 
+height: 130px;
+border-radius: 50%;
+opacity: 0.8;
+  transition:  opacity 2s;
+
+
+}
+.nsi{
+position: absolute;
+top: 400px;
+left: 580px;
+  color: #14EAE3;
+  font-family: cursive;
+  font-size: 30px;
+  text-shadow:2px 2px 4px white;
+
+
+  transition:  opacity 2s,drop-shadow 2s;
+}
+
+/*
+.nsi:hover{
+
+opacity:1;
+filter: drop-shadow(1px 1px 8px white);
+
+}*/
+
+.im:hover{
+
+opacity:1;
+
 }

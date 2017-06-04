@@ -127,31 +127,35 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 </div>
 
 
-<div style="display:none;"id="myDiv2" class="row">
+<div style="display:none;" id="home" class="row">
 
 <div class="fontt">
 
 
-<p class="animated tada" >P</p>
-<p class="animated tada" >R</p>
-<p class="animated tada" >A</p>
-<p class="animated tada" >J</p>
-<p class="animated tada" >J</p>
-<p class="animated tada" >W</p>
-<p class="animated tada" >A</p>
-<p class="animated tada" >L</p>
-<p class="animated tada" >R</p>
-<p class="animated tada" >O</p>
-<p class="animated tada" >H</p>
-<p class="animated tada" >I</p>
-<p class="animated tada" >L</p>
-<p class="animated tada" >L</p>
-<p class="animated tada" >A</p>
+<p class="animated tada a" >P</p>
+<p class="animated tada a" >R</p>
+<p class="animated tada a" >A</p>
+<p class="animated tada a" >J</p>
+<p class="animated tada a" >J</p>
+<p class="animated tada a" >W</p>
+<p class="animated tada a" >A</p>
+<p class="animated tada a" >L</p>
+&nbsp;
+<p class="animated tada a" >R</p>
+<p class="animated tada a" >O</p>
+<p class="animated tada a" >H</p>
+<p class="animated tada a" >I</p>
+<p class="animated tada a" >L</p>
+<p class="animated tada a" >L</p>
+<p class="animated tada a" >A</p>
 
 </div>
 
 
 
+<img class="im"src="mee.jpg">
+
+<p class="nsi" > B.E |NSIT</p>
 </div>
 <div id="particles-js"></div>
 
@@ -170,18 +174,43 @@ obj.el.classList.add('fill-1', 'clear-stroke');
 $(document).ready(function(){
     
 
-    $('p').hover(function(){
+    $('.a').hover(function(){
         $(this).addClass('animated wobble');
-          $(this).css('color','pink');
+          
         }, function(){
     $(this).removeClass('animated wobble');
-    $(this).css('color','red');
+    
 }
 
 
         );
 
    
+$(".icon1").click(function(){
+  
+  $(this).addClass('active');
+  $(".icon2").removeClass('active');
+   $(".icon3").removeClass('active');
+
+});
+
+$(".icon2").click(function(){
+  
+  $(this).addClass('active');
+  $(".icon1").removeClass('active');
+   $(".icon3").removeClass('active');
+
+});
+
+$(".icon3").click(function(){
+  
+  $(this).addClass('active');
+  $(".icon1").removeClass('active');
+   $(".icon2").removeClass('active');
+
+});
+
+
 
 
 });
