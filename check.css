@@ -252,6 +252,8 @@ filter: drop-shadow(1px 0px 5px #6B3DD1);
 a,i{
 
   display: inline-block;
+  left: 50%;
+  transform:translateX(50%);
 }
 
 
