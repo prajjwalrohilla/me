@@ -5,7 +5,8 @@
 
   <title>Prajjwak Rohilla</title>
 
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <script src='//cdn.jsdelivr.net/vivus/0.2.3/vivus.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -118,8 +119,8 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
   <div class="flee col-xs-4 col-md-3 " >
 
   <a href="#home" ><i class= "material-icons icon1 " style="font-size: 30px ;">home</i></a><br>
-  <a href="url"><i class="material-icons icon2"  style="font-size: 30px ;">person</i></a><br>
-  <a href="url"><i class="material-icons icon3"  style="font-size: 30px ;">build</i></a><br>
+  <a href="#about"><i class="material-icons icon2"  style="font-size: 30px ;">person</i></a><br>
+  <a href="#proj"><i class="material-icons icon3"  style="font-size: 30px ;">build</i></a><br>
   </div>
 
 
@@ -157,6 +158,18 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 
 <p class="nsi" > B.E |NSIT</p>
 </div>
+
+<div id="about" style="display:none;" >
+  <p class="ab">my name is prajjwal</p>
+
+
+</div>
+
+
+
+
+
+
 <div id="particles-js"></div>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -192,6 +205,13 @@ $(".icon1").click(function(){
   $(".icon2").removeClass('active');
    $(".icon3").removeClass('active');
 
+$("#about").fadeOut();
+$("#proj").fadeOut();
+$("#home").fadeIn(4000);
+
+
+
+
 });
 
 $(".icon2").click(function(){
@@ -200,6 +220,14 @@ $(".icon2").click(function(){
   $(".icon1").removeClass('active');
    $(".icon3").removeClass('active');
 
+
+$("#home").fadeOut();
+$("#proj").fadeOut();
+
+$("#about").fadeIn(4000);
+
+
+
 });
 
 $(".icon3").click(function(){
@@ -207,6 +235,12 @@ $(".icon3").click(function(){
   $(this).addClass('active');
   $(".icon1").removeClass('active');
    $(".icon2").removeClass('active');
+
+
+   $("#home").fadeOut();
+$("#about").fadeOut();
+
+$("#proj").fadeIn(4000);
 
 });
 

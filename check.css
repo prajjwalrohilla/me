@@ -15,10 +15,8 @@ path {
   }
 
 
-@media only screen and (max-width: 1000px) {
+@media  screen and (max-width: 700px) {
     #canvas{
-
-
 
     position: absolute;
     margin-left: 100px;
@@ -29,22 +27,56 @@ path {
 
 
 .fontt{
-position: absolute;
-left: 200px;
-top:100px;
-  font-size: 70px;
-  font-family: cursive;
-  display: flex;
-  text-shadow:6px 2px 6px white;
+position: fixed;
+    left: 30px;
+    top: 100px;
+    font-size: 50px;
+    font-family: cursive;
+    display: flex;
+    display: -webkit-flex;
+    text-shadow: 6px 2px 6px white;
+    opacity: 0.7;
+    color: #14EAE3;
+}
 
-  opacity: 0.7;
-  color: #14EAE3;
+.ne{
+
+position: fixed;
+background-color: #212323;
+height: 4%;
+width: 100%;
+margin:0px auto;
+opacity: 0.7;
+z-index: 3;
+filter: drop-shadow(1px 0px 5px #6B3DD1);
+-webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {top:-100px; opacity:0 } 
+  to { top:0px; opacity:0.7 }
+}
+
+@keyframes animatebottom { 
+  from{ top:-100px; opacity:0 } 
+  to{ top:0px; opacity:0.7 }
+}
+
+
+.flee{
+position: relative;
+margin-left: 5px;
+margin-top:0px;
+padding-left: 70px;
   
 }
 
 .im{
-position:absolute;
-left: 480px;
+position:fixed;
+left: 120px;
 top:210px; 
 height: 130px;
 border-radius: 50%;
@@ -53,8 +85,25 @@ opacity: 0.8;
 
 
 }
+.nsi{
+position: absolute;
+top: 400px;
+left: 110px;
+  color: #14EAE3;
+  font-family: cursive;
+  font-size: 30px;
+  text-shadow:2px 2px 4px white;
+
+
+  transition:  opacity 2s,drop-shadow 2s;
+}
+  
+
+
+
 
 }
+
 
 .ne{
 
@@ -230,4 +279,12 @@ filter: drop-shadow(1px 1px 8px white);
 
 opacity:1;
 
+}
+
+.ab{
+
+  position: absolute;
+  left: 100px;
+  top:200px;
+  color: white;
 }
