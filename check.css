@@ -26,7 +26,7 @@ position: absolute;
 background-color: #212323;
 height: 100vh; 
 margin:0px auto;
-width: 60px;
+width: 40px;
 opacity: 0.7;
 z-index: 3;
 filter: drop-shadow(1px 0px 5px #6B3DD1);
@@ -209,9 +209,28 @@ opacity:1;
   top:200px;
   color: white;
 }
+.cont{
+
+  position: absolute;
+  left: 50%;
+  top:80%;
+  transform:translateX(-50%);
+}
 
 
+.ico{
 
+color: green;
+padding: 0px 10px;
+opacity: 0.7;
+transition:opacity 2s,drop-shadow 2s ;
+
+}
+.ico:hover{
+  opacity: 1;
+filter: drop-shadow(1px 0px 5px white);
+
+}
 
 
 @media  screen and (max-width: 700px) {
@@ -245,15 +264,25 @@ filter: drop-shadow(1px 0px 5px #6B3DD1);
 }
 
 
+.flee{
+position: absolute;
+left: 27vw;
+height: 100%;
+top: 5%;
+ transform:translateY(-5%);
 
+
+  
+}
 
 
   
 a,i{
 
   display: inline-block;
-  left: 50%;
-  transform:translateX(50%);
+
+  padding: 1px 6px 2px;
+
 }
 
 
