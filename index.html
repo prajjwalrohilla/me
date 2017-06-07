@@ -155,7 +155,9 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 </div>
 
 <div id="about" style="display:none;" >
-  <p class="ab">my name is prajjwal</p>
+  <div class="inf">
+  <p >my name is prajjwal</p>
+</div>
 <div class="cont">
   <a href="https://www.linkedin.com/in/prajjwal-rohilla-056834111/" ><i class="fa fa-linkedin ico" style="font-size: 40px ;"></i></a>
   <a href="https://github.com/prajjwalrohilla"><i class="fa fa-github ico"  style="font-size: 40px ;"></i></a>
@@ -170,7 +172,37 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 
 
 <div id="proj" style="display:none;">
-  <div>
+  <div class="pro">
+
+<p >Projects</p>
+  </div>
+  <div class="inpro">
+
+
+  <div class="two">
+    <img src="2048.png" style="width:250px;height:250px;">
+    <p style="text-align:center;">2048 is a single-player sliding block puzzle game</p>
+    <button class=" btn pri"><a href="https://github.com/prajjwalrohilla/2048">view code</a></button>
+    <button class="btn pri"><a href="https://prajjwalrohilla.github.io/2048/">play</a></button>
+  </div>
+
+
+
+
+<div class="two">
+    <img src="scrib.png" style="width:250px;height:250px;">
+    <p style="text-align:center;">scribble or doodle- android app for drawing or scribbling</p>
+    <button class=" btn pri"><a href="https://github.com/prajjwalrohilla/scribbleordoodle">view code</a></button>
+  </div>
+
+
+<div class="two">
+    <img src="port.png" style="width:250px;height:250px;">
+    <p style="text-align:center;">Designing my  own portfolio</p>
+    <button class=" btn pri"><a href="">view code</a></button>
+    <button class="btn pri"><a href="">play</a></button>
+  </div>
+
 
 
 
@@ -222,8 +254,8 @@ $(".icon1").click(function(){
   $(".icon2").removeClass('active');
    $(".icon3").removeClass('active');
 
-$("#about").fadeOut();
-$("#proj").fadeOut();
+$("#about").fadeOut(1000);
+$("#proj").fadeOut(1000);
 $("#home").fadeIn(4000);
 
 
@@ -238,8 +270,8 @@ $(".icon2").click(function(){
    $(".icon3").removeClass('active');
 
 
-$("#home").fadeOut();
-$("#proj").fadeOut();
+$("#home").fadeOut(1000);
+$("#proj").fadeOut(1000);
 
 $("#about").fadeIn(4000);
 
@@ -254,8 +286,8 @@ $(".icon3").click(function(){
    $(".icon2").removeClass('active');
 
 
-   $("#home").fadeOut();
-$("#about").fadeOut();
+   $("#home").fadeOut(1000);
+$("#about").fadeOut(1000);
 
 $("#proj").fadeIn(4000);
 
