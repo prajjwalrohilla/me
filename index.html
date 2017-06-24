@@ -175,7 +175,7 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
 
 <p >Projects</p>
   </div>
-  <div class="inpro">
+  <div class="inpro" id="11">
 
 
 
@@ -208,7 +208,47 @@ l-72 -112 666 2 666 3 112 175 c62 96 145 226 184 288 l72 112 -665 0 -665 0
   </div>
 
 
+ <div class="inpro" style="display:none;" id="22">
 
+
+
+
+<div class="two">
+    <img src="twe.png" style="width:250px;height:250px; border-radius:8%;">
+    <p style="text-align:center;">tweet-instant-chrome-extension</p>
+    <button class=" btn pri"><a href="https://github.com/prajjwalrohilla/scribbleordoodle">view code</a></button>
+  </div>
+
+
+
+<div class="two">
+    <img src="ps.jpg" style="width:250px;height:250px; border-radius:8%;">
+    <p style="text-align:center;">photoshop-work</p>
+    <button class=" btn pri"><a href="https://prajjwalrohilla.github.io/me/#home">view</a></button>
+  </div>
+
+
+
+  </div>
+
+
+<div class="inpro" id="33" style="display:none; ">
+
+
+
+
+
+  </div>
+
+<div class="dots">
+
+  <ul>
+<li id="1" class="active"></li>
+<li id="2"></li>
+<li id="3"></li>
+  </ul>
+
+</div>
 
 
 </div>
@@ -293,6 +333,53 @@ $("#proj").fadeIn(4000);
 });
 
 
+
+
+
+$("#1").click(function(){
+  
+  $(this).addClass('active');
+  $("#2").removeClass('active');
+   $("#3").removeClass('active');
+
+$("#33").fadeOut(1000);
+$("#22").fadeOut(1000);
+$("#11").fadeIn(4000);
+
+
+
+
+});
+
+$("#2").click(function(){
+  
+  $(this).addClass('active');
+  $("#1").removeClass('active');
+   $("#3").removeClass('active');
+
+$("#33").fadeOut(1000);
+$("#11").fadeOut(1000);
+$("#22").fadeIn(4000);
+
+
+
+
+});
+
+$("#3").click(function(){
+  
+  $(this).addClass('active');
+  $("#1").removeClass('active');
+   $("#2").removeClass('active');
+
+$("#22").fadeOut(1000);
+$("#11").fadeOut(1000);
+$("#33").fadeIn(4000);
+
+
+
+
+});
 
 
 });
