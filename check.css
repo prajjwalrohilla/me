@@ -401,6 +401,7 @@ top: 20%;
 
 .inpro {
 display: inline-block;
+padding: 40px;
 }
 .pro{
  
@@ -413,7 +414,8 @@ display: inline-block;
 position: absolute;
 left: 54%;
 color: white ;
-top: 210%;
+top: 19%;
+padding:30px;
 transform: translateX(-50%);
 }
 
