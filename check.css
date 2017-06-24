@@ -216,12 +216,13 @@ opacity:1;
 
 
 .cont{
-
-  position: absolute;
-  display: flex;
-  margin-left: 48%;
-  top:120%;
-  transform:translateX(-50%);
+    position: relative;
+    display: flex;
+    margin-left: 48%;
+    top: 20%;
+    margin: auto;
+    transform: translateX(-50%);
+    width: 10%;
 }
 
 
@@ -408,7 +409,11 @@ a,i{
 
 }
 
+.fa{
 
+ padding: 0px 0px 0px;
+
+}
 .fontt{
 
 font-size: 9vw;
@@ -451,7 +456,11 @@ font-size: 50px;
 }
 
 
-
+.cont {
+    
+    width: 40%;
+   
+}
 
 
 }
