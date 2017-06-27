@@ -217,12 +217,9 @@ opacity:1;
 
 .cont{
     position: relative;
-    display: flex;
-    margin-left: 48%;
+ 
     top: 20%;
-    margin: auto;
-    transform: translateX(-50%);
-    width: 10%;
+  text-align: center;
 }
 
 
@@ -457,11 +454,6 @@ font-size: 50px;
 }
 
 
-.cont {
-    
-    width: 40%;
-   
-}
 
 
 }
