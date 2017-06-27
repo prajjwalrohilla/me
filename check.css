@@ -22,7 +22,7 @@ path {
 
 .ne{
 
-position: absolute;
+position: fixed;
 background-color: #212323;
 height: 100vh; 
 margin:0px auto;
@@ -358,7 +358,7 @@ opacity: 0.7;
 
 
 
-@media  screen and (max-width: 700px) {
+@media  screen and (max-width: 1000px) {
     
 
 .ne{
