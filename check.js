@@ -1,37 +1,8 @@
-//window.onload=myf();
 
-
-/*
-
-function myf() {
-
- 
-
-
-new Vivus('canvas', {start: 'autostart', type: 'async',duration: 200, pathTimingFunction: Vivus.EASE}, function(obj){
-obj.el.classList.add('fill-1', 'clear-stroke');
-  });
-
-
-
-
-
-
-
-new Vivus('canvas', {start: 'autostart', type: 'async', duration: 300, animTimingFunction: Vivus.EASE}, function(car){
-    setTimeout(function(){ car.reset().play(); }, 3000);
-  });
-
-
-
-
-    myVar = setTimeout(showPage, 6000);
-}
-*/
 
 function showPage(){
 
- 
+
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
   document.getElementById("home").style.display = "block";
@@ -40,28 +11,105 @@ function showPage(){
  }
 
 
+$(document).ready(function(){
+    
+
+    new Vivus('canvas', {start: 'autostart', type: 'async',duration: 200, pathTimingFunction: Vivus.EASE}, function(obj){
+obj.el.classList.add('fill-1', 'clear-stroke');
+  });
+
+  myVar = setTimeout(showPage, 6000);
+
+
+    $('.a').hover(function(){
+        $(this).addClass('animated wobble');
+          
+        }, function(){
+    $(this).removeClass('animated wobble');
+    
+}
+
+
+        );
+
+   
+$(".icon1").click(function(){
+  
+  $(this).addClass('active');
+  $(".icon2").removeClass('active');
+   $(".icon3").removeClass('active');
+
+$("#about").fadeOut(1000);
+$("#proj").fadeOut(1000);
+$("#home").fadeIn(4000);
+
+
+
+
+});
+
+$(".icon2").click(function(){
+  
+  $(this).addClass('active');
+  $(".icon1").removeClass('active');
+   $(".icon3").removeClass('active');
+
+
+$("#home").fadeOut(1000);
+$("#proj").fadeOut(1000);
+
+$("#about").fadeIn(4000);
+
+
+
+});
+
+$(".icon3").click(function(){
+  
+  $(this).addClass('active');
+  $(".icon1").removeClass('active');
+   $(".icon2").removeClass('active');
+
+
+   $("#home").fadeOut(1000);
+$("#about").fadeOut(1000);
+
+$("#proj").fadeIn(4000);
+
+});
+
+
+
+
+
+
+
+});
  /* ---- particles.js config ---- */
+
+
 
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 400,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
+
     "color": {
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "edge",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 10
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -70,7 +118,7 @@ particlesJS("particles-js", {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.7,
       "random": false,
       "anim": {
         "enable": false,
@@ -93,7 +141,7 @@ particlesJS("particles-js", {
       "enable": true,
       "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0,
       "width": 1
     },
     "move": {
@@ -103,9 +151,9 @@ particlesJS("particles-js", {
       "random": false,
       "straight": false,
       "out_mode": "out",
-      "bounce": false,
+      "bounce": true,
       "attract": {
-        "enable": false,
+        "enable": "repulse",
         "rotateX": 600,
         "rotateY": 1200
       }
@@ -116,11 +164,11 @@ particlesJS("particles-js", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "bubble"
       },
       "resize": true
     },
@@ -139,8 +187,8 @@ particlesJS("particles-js", {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 100,
+        "duration": 0.1
       },
       "push": {
         "particles_nb": 4
@@ -152,7 +200,4 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
-
-
 

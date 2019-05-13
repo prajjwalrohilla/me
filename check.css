@@ -135,20 +135,12 @@ fill-opacity: 0.9;
  
 }
 
-#home{
 
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-}
 
 .fontt{
-position: relative;
+position: absolute;
 left: 50%;
-top:100px;
-width: 80%;
-text-align: center;
+top:10%;
 transform: translateX(-50%);
   font-size: 70px;
   font-family: cursive;
@@ -156,14 +148,11 @@ transform: translateX(-50%);
   display: -webkit-flex;
   text-shadow:6px 2px 6px white;
 
-  opacity: 0.9;
+  opacity: 0.7;
   color: #14EAE3;
   
 }
 
-.ab{
-width: 80vw;
-}
 
 
 .active{
@@ -174,9 +163,9 @@ filter: drop-shadow(1px 1px 8px white);
 }
 
 .im{
-position:relative;
+position:absolute;
 left: 50%;
-top:120px;
+top:30%;
 transform: translateX(-50%);
 height: 130px;
 border-radius: 50%;
@@ -186,10 +175,10 @@ opacity: 0.8;
 
 }
 .nsi{
-position: relative;
-text-align: center;
-top:170px;
-
+position: absolute;
+left: 50%;
+top:60%;
+transform: translateX(-50%);
   color: #14EAE3;
   font-family: cursive;
   font-size: 30px;
@@ -286,45 +275,46 @@ transform: translateX(-50%);
 }
 
 .inpro{
-  position: absolute;
-  display: flex;
-  border: 0px solid white;
+position:absolute;
   left: 50%;
-  top:23%;
-  border-radius: 1%;
-  transform: translateX(-50%);
-  text-align: center;
+    top: 23%;
+
+    transform: translateX(-50%);
+
 
 }
 
 .two{
-position: relative;
+  padding-top: 60px;
   border: 0px solid white;
 color: white;
-margin:40px ;
-padding: 10px ;
-display: inline-block;
-border-radius: 3%;
+text-align: center;
    
  box-shadow: inset 0 0 0 0 #5ECBCB;
   -webkit-transition: all ease 0.8s;
   -moz-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  f
 }
-
+/*
 .two:hover{
 
   box-shadow: inset 500px 0px 0 0 #5ECBCB;
 
 }
-.pri{
+
+*/
+
+
+
+.button{
 color: #FFF;
     background: #EF672F;
-    padding: 15px 10px;
+      padding: 5px 20px 5px 20px;
     margin: 25px;
     font-family: 'OpenSansBold', sans-serif;
     font-size: 14px;
-    float: left;
+
     font-weight: bold;
     border-radius: 2px;
     display: inline-block;
@@ -336,30 +326,12 @@ color: #FFF;
   transition: all ease 0.8s;
 }
 
-.pri:hover{
+.button:hover{
 
   box-shadow: inset 0 100px 0 0 #C14800;
 } 
 
 
-
-.dots{
-
-position: absolute;
-left: 53%;
-color: white ;
-top: 80%;
-transform: translateX(-50%);
-}
-
-
-li{
-float: left;
-padding:20px;
-font-size: 50px;
-opacity: 0.7;
-
-}
 
 
 
@@ -426,40 +398,26 @@ a,i{
 }
 .fontt{
 
-font-size: 7vw;
+font-size: 9vw;
 
 }
 
-.inpro {
-display: inline-block;
-padding-top: 40px;
 
-}
 .pro{
  
   top:10%;
 }
 
+.inpro{
 
-.dots{
-
-position: absolute;
-left: 54%;
-color: white ;
-top: 19%;
-margin-top: 20px;
-transform: translateX(-50%);
+  padding: 0p
 }
 
 
-li{
-float: left;
-padding:15px;
-font-size: 50px;
+.nsi{
+
+  top:70%;
 }
-
-
-
 
 
 
